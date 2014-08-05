@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5EBE9CD199147B900B74E45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBE9CC199147B900B74E45 /* AppDelegate.swift */; };
+		A5EBE9CF199147B900B74E45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBE9CE199147B900B74E45 /* ViewController.swift */; };
+		A5EBE9D2199147B900B74E45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5EBE9D0199147B900B74E45 /* Main.storyboard */; };
+		A5EBE9D4199147B900B74E45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5EBE9D3199147B900B74E45 /* Images.xcassets */; };
+		A5EBE9E0199147B900B74E45 /* grootKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBE9DF199147B900B74E45 /* grootKeyboardTests.swift */; };
+		A5EBE9F21991496700B74E45 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBE9F11991496700B74E45 /* KeyboardViewController.swift */; };
+		A5EBE9F51991496700B74E45 /* grootBoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5EBE9ED1991496700B74E45 /* grootBoard.appex */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5EBE9DA199147B900B74E45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5EBE9BF199147B900B74E45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5EBE9C6199147B900B74E45;
+			remoteInfo = grootKeyboard;
+		};
+		A5EBE9F31991496700B74E45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5EBE9BF199147B900B74E45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5EBE9EC1991496700B74E45;
+			remoteInfo = grootBoard;
+		};
+		A5EBE9F61991496700B74E45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5EBE9BF199147B900B74E45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5EBE9EC1991496700B74E45;
+			remoteInfo = grootBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5EBE9FB1991496700B74E45 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5EBE9F51991496700B74E45 /* grootBoard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A5EBE9C7199147B900B74E45 /* grootKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grootKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5EBE9CB199147B900B74E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5EBE9CC199147B900B74E45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5EBE9CE199147B900B74E45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5EBE9D1199147B900B74E45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5EBE9D3199147B900B74E45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5EBE9D9199147B900B74E45 /* grootKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grootKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5EBE9DE199147B900B74E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5EBE9DF199147B900B74E45 /* grootKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grootKeyboardTests.swift; sourceTree = "<group>"; };
+		A5EBE9ED1991496700B74E45 /* grootBoard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = grootBoard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5EBE9F01991496700B74E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5EBE9F11991496700B74E45 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5EBE9C4199147B900B74E45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EBE9D6199147B900B74E45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EBE9EA1991496700B74E45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5EBE9BE199147B900B74E45 = {
+			isa = PBXGroup;
+			children = (
+				A5EBE9C9199147B900B74E45 /* grootKeyboard */,
+				A5EBE9DC199147B900B74E45 /* grootKeyboardTests */,
+				A5EBE9EE1991496700B74E45 /* grootBoard */,
+				A5EBE9C8199147B900B74E45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5EBE9C8199147B900B74E45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5EBE9C7199147B900B74E45 /* grootKeyboard.app */,
+				A5EBE9D9199147B900B74E45 /* grootKeyboardTests.xctest */,
+				A5EBE9ED1991496700B74E45 /* grootBoard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5EBE9C9199147B900B74E45 /* grootKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A5EBE9CC199147B900B74E45 /* AppDelegate.swift */,
+				A5EBE9CE199147B900B74E45 /* ViewController.swift */,
+				A5EBE9D0199147B900B74E45 /* Main.storyboard */,
+				A5EBE9D3199147B900B74E45 /* Images.xcassets */,
+				A5EBE9CA199147B900B74E45 /* Supporting Files */,
+			);
+			path = grootKeyboard;
+			sourceTree = "<group>";
+		};
+		A5EBE9CA199147B900B74E45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5EBE9CB199147B900B74E45 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5EBE9DC199147B900B74E45 /* grootKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5EBE9DF199147B900B74E45 /* grootKeyboardTests.swift */,
+				A5EBE9DD199147B900B74E45 /* Supporting Files */,
+			);
+			path = grootKeyboardTests;
+			sourceTree = "<group>";
+		};
+		A5EBE9DD199147B900B74E45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5EBE9DE199147B900B74E45 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5EBE9EE1991496700B74E45 /* grootBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A5EBE9F11991496700B74E45 /* KeyboardViewController.swift */,
+				A5EBE9EF1991496700B74E45 /* Supporting Files */,
+			);
+			path = grootBoard;
+			sourceTree = "<group>";
+		};
+		A5EBE9EF1991496700B74E45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5EBE9F01991496700B74E45 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5EBE9C6199147B900B74E45 /* grootKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5EBE9E3199147B900B74E45 /* Build configuration list for PBXNativeTarget "grootKeyboard" */;
+			buildPhases = (
+				A5EBE9C3199147B900B74E45 /* Sources */,
+				A5EBE9C4199147B900B74E45 /* Frameworks */,
+				A5EBE9C5199147B900B74E45 /* Resources */,
+				A5EBE9FB1991496700B74E45 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5EBE9F41991496700B74E45 /* PBXTargetDependency */,
+				A5EBE9F71991496700B74E45 /* PBXTargetDependency */,
+			);
+			name = grootKeyboard;
+			productName = grootKeyboard;
+			productReference = A5EBE9C7199147B900B74E45 /* grootKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5EBE9D8199147B900B74E45 /* grootKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5EBE9E6199147B900B74E45 /* Build configuration list for PBXNativeTarget "grootKeyboardTests" */;
+			buildPhases = (
+				A5EBE9D5199147B900B74E45 /* Sources */,
+				A5EBE9D6199147B900B74E45 /* Frameworks */,
+				A5EBE9D7199147B900B74E45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5EBE9DB199147B900B74E45 /* PBXTargetDependency */,
+			);
+			name = grootKeyboardTests;
+			productName = grootKeyboardTests;
+			productReference = A5EBE9D9199147B900B74E45 /* grootKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5EBE9EC1991496700B74E45 /* grootBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5EBE9F81991496700B74E45 /* Build configuration list for PBXNativeTarget "grootBoard" */;
+			buildPhases = (
+				A5EBE9E91991496700B74E45 /* Sources */,
+				A5EBE9EA1991496700B74E45 /* Frameworks */,
+				A5EBE9EB1991496700B74E45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = grootBoard;
+			productName = grootBoard;
+			productReference = A5EBE9ED1991496700B74E45 /* grootBoard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5EBE9BF199147B900B74E45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Konstantine Mushegian";
+				TargetAttributes = {
+					A5EBE9C6199147B900B74E45 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					A5EBE9D8199147B900B74E45 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = A5EBE9C6199147B900B74E45;
+					};
+					A5EBE9EC1991496700B74E45 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = A5EBE9C2199147B900B74E45 /* Build configuration list for PBXProject "grootKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5EBE9BE199147B900B74E45;
+			productRefGroup = A5EBE9C8199147B900B74E45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5EBE9C6199147B900B74E45 /* grootKeyboard */,
+				A5EBE9D8199147B900B74E45 /* grootKeyboardTests */,
+				A5EBE9EC1991496700B74E45 /* grootBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5EBE9C5199147B900B74E45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5EBE9D2199147B900B74E45 /* Main.storyboard in Resources */,
+				A5EBE9D4199147B900B74E45 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EBE9D7199147B900B74E45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EBE9EB1991496700B74E45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5EBE9C3199147B900B74E45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5EBE9CF199147B900B74E45 /* ViewController.swift in Sources */,
+				A5EBE9CD199147B900B74E45 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EBE9D5199147B900B74E45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5EBE9E0199147B900B74E45 /* grootKeyboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EBE9E91991496700B74E45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5EBE9F21991496700B74E45 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5EBE9DB199147B900B74E45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5EBE9C6199147B900B74E45 /* grootKeyboard */;
+			targetProxy = A5EBE9DA199147B900B74E45 /* PBXContainerItemProxy */;
+		};
+		A5EBE9F41991496700B74E45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5EBE9EC1991496700B74E45 /* grootBoard */;
+			targetProxy = A5EBE9F31991496700B74E45 /* PBXContainerItemProxy */;
+		};
+		A5EBE9F71991496700B74E45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5EBE9EC1991496700B74E45 /* grootBoard */;
+			targetProxy = A5EBE9F61991496700B74E45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5EBE9D0199147B900B74E45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5EBE9D1199147B900B74E45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5EBE9E1199147B900B74E45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5EBE9E2199147B900B74E45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5EBE9E4199147B900B74E45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = grootKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5EBE9E5199147B900B74E45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = grootKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A5EBE9E7199147B900B74E45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/grootKeyboard.app/grootKeyboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = grootKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		A5EBE9E8199147B900B74E45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/grootKeyboard.app/grootKeyboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = grootKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		A5EBE9F91991496700B74E45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = grootBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A5EBE9FA1991496700B74E45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				INFOPLIST_FILE = grootBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5EBE9C2199147B900B74E45 /* Build configuration list for PBXProject "grootKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5EBE9E1199147B900B74E45 /* Debug */,
+				A5EBE9E2199147B900B74E45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5EBE9E3199147B900B74E45 /* Build configuration list for PBXNativeTarget "grootKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5EBE9E4199147B900B74E45 /* Debug */,
+				A5EBE9E5199147B900B74E45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5EBE9E6199147B900B74E45 /* Build configuration list for PBXNativeTarget "grootKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5EBE9E7199147B900B74E45 /* Debug */,
+				A5EBE9E8199147B900B74E45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5EBE9F81991496700B74E45 /* Build configuration list for PBXNativeTarget "grootBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5EBE9F91991496700B74E45 /* Debug */,
+				A5EBE9FA1991496700B74E45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5EBE9BF199147B900B74E45 /* Project object */;
+}
