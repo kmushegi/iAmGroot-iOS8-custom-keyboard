@@ -9,26 +9,27 @@
 import UIKit
 
 class KeyboardViewController: UIInputViewController {
-
-    //@IBOutlet weak var nextKeyboardButton: UIButton!
     
     var nextKeyboardButton: UIButton!
     var iAmGroot: UIButton!
 
     override func updateViewConstraints() {
         super.updateViewConstraints()
-    
-        // Add custom view sizing constraints here
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        // Perform custom UI setup here
         addKeyboardButtons()
         
     }
+    /*
+    *********************************DISCLAIMER*********************************
     
+    custom keyboard does not have a "delete" button; this is done on purpose,
+    keyboard's only functionality is to make it easier to say you are groot.
+    
+    ****************************************************************************
+    */
     func addKeyboardButtons() {
         addGroot()
         addNextKeyboardButton()
@@ -41,27 +42,45 @@ class KeyboardViewController: UIInputViewController {
         iAmGroot.sizeToFit()
         iAmGroot.setTranslatesAutoresizingMaskIntoConstraints(false)
         
+        //adding action to the button
         iAmGroot.addTarget(self, action: "didTapGroot", forControlEvents: .TouchUpInside)
         
+        //button appearance changes
         iAmGroot.titleLabel.font = UIFont.systemFontOfSize(54)
         iAmGroot.setTitleColor(UIColor(white: 0.0, alpha: 1.0), forState: .Normal)
-        
-        
         iAmGroot.backgroundColor = UIColor(white: 0.9, alpha: 1.0)
         iAmGroot.layer.cornerRadius = 5
         
         view.addSubview(iAmGroot)
         
+        //button placement on the screen
         var grootCenterYConstraint = NSLayoutConstraint(item: iAmGroot, attribute: .CenterY, relatedBy: .Equal, toItem: view, attribute: .CenterY, multiplier: 1.0, constant: 0)
         var grootCenterXConstaint = NSLayoutConstraint(item: iAmGroot, attribute: .CenterX, relatedBy: .Equal, toItem: view, attribute: .CenterX, multiplier: 1.0, constant: 0)
         
         view.addConstraints([grootCenterXConstaint,grootCenterYConstraint])
         
     }
-    
+    //action responsible for inputting the text
     func didTapGroot() {
         var proxy = textDocumentProxy as UITextDocumentProxy
         proxy.insertText("I AM GROOT")
+    }
+    
+    //functionality to change input to next keyboard
+    func addNextKeyboardButton() {
+        self.nextKeyboardButton = UIButton.buttonWithType(.System) as UIButton
+        
+        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), forState: .Normal)
+        self.nextKeyboardButton.sizeToFit()
+        self.nextKeyboardButton.setTranslatesAutoresizingMaskIntoConstraints(false)
+        
+        self.nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside)
+        
+        self.view.addSubview(self.nextKeyboardButton)
+        
+        var nextKeyboardButtonLeftSideConstraint = NSLayoutConstraint(item: self.nextKeyboardButton, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1.0, constant: 0.0)
+        var nextKeyboardButtonBottomConstraint = NSLayoutConstraint(item: self.nextKeyboardButton, attribute: .Bottom, relatedBy: .Equal, toItem: self.view, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
+        self.view.addConstraints([nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint])
     }
 
     override func didReceiveMemoryWarning() {
@@ -84,22 +103,6 @@ class KeyboardViewController: UIInputViewController {
             textColor = UIColor.blackColor()
         }
         self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
-    }
-    
-    func addNextKeyboardButton() {
-        self.nextKeyboardButton = UIButton.buttonWithType(.System) as UIButton
-        
-        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), forState: .Normal)
-        self.nextKeyboardButton.sizeToFit()
-        self.nextKeyboardButton.setTranslatesAutoresizingMaskIntoConstraints(false)
-        
-        self.nextKeyboardButton.addTarget(self, action: "advanceToNextInputMode", forControlEvents: .TouchUpInside)
-        
-        self.view.addSubview(self.nextKeyboardButton)
-        
-        var nextKeyboardButtonLeftSideConstraint = NSLayoutConstraint(item: self.nextKeyboardButton, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1.0, constant: 0.0)
-        var nextKeyboardButtonBottomConstraint = NSLayoutConstraint(item: self.nextKeyboardButton, attribute: .Bottom, relatedBy: .Equal, toItem: self.view, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
-        self.view.addConstraints([nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint])
     }
 
 }
