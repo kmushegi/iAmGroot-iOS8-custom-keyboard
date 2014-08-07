@@ -5,4 +5,4 @@ custom iOS keyboard that enables user to quicky and easily let someone know they
 
 Original Solarized Dark    | Solarized Ocean            
 -----------------------    | ---------------            
-![](http://bit.ly/XGnDkl)  | ![](http://bit.ly/1tZTQjS) 
+![](http://bit.ly/XGnDkl)  | ![](http://bit.ly/1ofxV64) 
