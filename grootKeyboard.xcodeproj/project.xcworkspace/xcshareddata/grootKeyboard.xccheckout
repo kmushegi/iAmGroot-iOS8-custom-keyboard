@@ -10,29 +10,29 @@
 	<string>grootKeyboard</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B2EC691E-3BAF-4E84-A1E6-016957080718</key>
+		<key>7B6912150E0406C267F9BD652244158E55325538</key>
 		<string>https://github.com/kmushegi/iAmGroot-iOS8-custom-keyboard.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>grootKeyboard.xcodeproj/project.xcworkspace</string>
+	<string>grootKeyboard.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B2EC691E-3BAF-4E84-A1E6-016957080718</key>
+		<key>7B6912150E0406C267F9BD652244158E55325538</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/kmushegi/iAmGroot-iOS8-custom-keyboard.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B2EC691E-3BAF-4E84-A1E6-016957080718</string>
+	<string>7B6912150E0406C267F9BD652244158E55325538</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B2EC691E-3BAF-4E84-A1E6-016957080718</string>
+			<string>7B6912150E0406C267F9BD652244158E55325538</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iAmGroot-iOS8-custom-keyboard</string>
 		</dict>
